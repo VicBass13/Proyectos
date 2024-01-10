@@ -1,0 +1,30 @@
+package common;
+
+import java.util.Scanner;
+
+public class FizzBuzz {
+
+	public static void main(String[] args){
+	
+		//Crear un programa que al ingresar el numero por teclado te indique si el numero es multiplo de 3 o de 5 de ser
+		//asi el primero dira Fizz Y el segundo Buzz y si exiten dentro de la secuencia algun numero que sea multiplo de los dos
+		//la frase sera FizzBuzz
+	
+		System.out.println("Ingresa un un numero a reccorrer y saber si contiene multiplos de 3 o de 5 ");
+		
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		
+		for(int i = 0 ; i <= num; i++) {
+			if(i % 3 == 0 && i % 5 == 0)
+				System.out.println("FizzBuzz");
+			else if(i % 3 == 0)
+				System.out.println("Fizz");
+			else if(i%5==0)
+				System.out.println("Buzz");
+				else
+					System.out.println(i + (" "));
+		}
+		
+	}
+}
